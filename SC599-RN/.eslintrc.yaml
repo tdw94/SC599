@@ -1,0 +1,26 @@
+plugins:
+  - react
+  - react-native
+parser: babel-eslint
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+env:
+  react-native/react-native: true
+  jest: true
+  browser: true
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+settings:
+  react:
+    version: detect
+rules:
+  react-native/no-unused-styles: error
+  react-native/split-platform-components: error
+  react-native/no-inline-styles: error
+  react-native/no-color-literals: error
+  react-native/no-raw-text: [2]
+  react/display-name: [2]
+  no-mixed-spaces-and-tabs: [0]
+  no-console: ['error', {allow: ['warn']}]
